@@ -5,29 +5,30 @@ $("#emil").click(function() {
   $(".Emilia").toggleClass("Emilia-active");
 });
 
-
-
-
-
-
-var body = $('body');
-$( document ).ready(function() {
-  body.addClass(localStorage.getItem("theme"));
-$("#switch").prop("checked" , localStorage.getItem("checkbox"));
-
+$(".passion_img").hover(function() {
+  $(".text_pass").toggleClass("text_pass-active");
+  $(".h2_anime").toggleClass("h2_anime-active");
 });
+
+$(".passion_img2").hover(function() {
+  $(".text_pass2").toggleClass("text_pass2-active");
+  $(".h2_steam").toggleClass("h2_steam-active");
+});
+
+$(".passion_img3").hover(function() {
+  $(".text_pass3").toggleClass("text_pass3-active");
+  $(".h2_musique").toggleClass("h2_musique-active");
+});
+
 $("#switch").on("click", () => {
   if ($("#switch").prop("checked")) {
     $(".mybody").addClass("dark");
     $(".trait").addClass("trait-dark");
-    localStorage.setItem("checkbox" , "checked");
-    localStorage.setItem("theme", "dark");
-    
-
+    $(".h2_anime").addClass("h2_anime-active-light");
   } else {
     $(".mybody").removeClass("dark");
     $(".trait").removeClass("trait-dark");
     localStorage.setItem("theme", " ");
-    localStorage.setItem("checkbox" , "");
+    localStorage.setItem("checkbox", "");
   }
 });

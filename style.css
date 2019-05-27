@@ -4,17 +4,17 @@
   font-family: "Open Sans", sans-serif;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
   height: 3000px;
-  background: linear-gradient(to right, #aea995, #807c6d);
+  background: linear-gradient(to bottom, #c2bca0, #706c5f);
   color: #22221d;
-  scroll-behavior: smooth;
 }
 
 header {
-  margin-bottom: 5em;
+  margin-bottom: 3em;
   background-image: -webkit-gradient(
       linear,
       left top,
@@ -61,7 +61,7 @@ nav {
 
 .liste-active {
   visibility: visible;
-  width: 30%;
+  width: 45%;
   display: flex;
   justify-content: flex-start;
   list-style-type: none;
@@ -73,15 +73,20 @@ nav {
   z-index: auto;
   top: 3.5%;
   left: 5%;
-  padding-left: 5em;
+  padding-left: 3em;
   border: solid #4e4c42 2px;
-  
+
   z-index: 15;
 }
 
-ul a {
+li a {
   text-decoration: none;
-  color: rgba(255, 255, 255, 0);
+}
+
+li a:hover {
+  transition: none;
+  transition-delay: 0ms !important;
+  color: #22221d !important;
 }
 
 ul li {
@@ -95,7 +100,7 @@ ul li {
 
 .li1-active {
   transition-duration: 1s;
-  transition-delay: 1s;
+  transition-delay: 0.7s;
   color: white;
 }
 
@@ -114,18 +119,15 @@ nav button {
   z-index: 16;
 }
 .Emilia {
-  width: 40%;
+  width: 50%;
   transition-duration: 1s;
-  
 }
 
 .Emilia-active {
-  width: 40%;
+  width: 50%;
   transition-duration: 1s;
   z-index: 3;
   transform: rotate(1turn);
-  
-  
 }
 
 .quote {
@@ -135,20 +137,20 @@ nav button {
   border-radius: 2em;
   padding: 0.5% 0.5%;
   font-size: 0.6em;
-  top: 9%;
+  top: 11%;
   left: 6%;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.616);
   visibility: hidden;
-  z-index: 5;
+  z-index: 17;
 }
 
 .quote::after {
-  z-index: 4;
+  z-index: 18;
 
   content: "";
   position: fixed;
   left: 6%;
-  top: 7.5%;
+  top: 9%;
   transform: rotate(-17deg);
   border-width: 10px;
   border-style: solid;
@@ -188,12 +190,11 @@ nav button {
   top: 2%;
   right: 1%;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   transition: 1s all ease;
   width: 100%;
   position: fixed;
   z-index: 14;
-  
 }
 
 #switch:checked ~ .switch-label {
@@ -239,7 +240,7 @@ nav button {
 }
 
 .header_text h1 {
-  font-size: 6em;
+  font-size: 5em;
   margin-bottom: 0.3em;
 }
 
@@ -254,7 +255,6 @@ nav button {
   border-radius: 1.2em;
   background-color: #aea995;
   transition-duration: 0.5s;
-  
 }
 
 .header_text button a {
@@ -268,22 +268,23 @@ nav button {
   background-color: #22221d;
 }
 
-.header_text button:hover a{
+.header_text button:hover a {
   color: #807c6d;
 }
 
-/* ======================================================================================== */
+/* ========================================== General ============================================== */
 
 .h2_general {
   text-align: center;
   font-size: 2.5em;
+  margin-bottom: 1em;
 }
 .trait {
   width: 20em;
   height: 0.2em;
   background-color: #22221d;
   border-radius: 1em;
-  margin: 5em auto;
+  margin: 3em auto;
 }
 
 .trait-dark {
@@ -292,4 +293,219 @@ nav button {
   background-color: #807c6d;
   border-radius: 1em;
   margin: 5em auto;
+}
+
+/* ======================================== PASSION ================================================= */
+
+.container_passion {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.h2_anime {
+  font-size: 2em;
+  color: #22221d;
+  transform: translate(150%, 0);
+  opacity: 0;
+  transition-duration: 1s;
+}
+
+.h2_anime-active {
+  font-size: 2em;
+  color: #69665b;
+  transform: translate(-35%, 0);
+  opacity: 1;
+  transition-duration: 1s;
+  text-align: center;
+}
+
+.text_pass {
+  width: 25%;
+  margin-right: 9%;
+  font-size: 1em;
+  color: #22221d;
+  background-color: #726e5c;
+  padding: 1.5em;
+  border-radius: 2em;
+  opacity: 0;
+  transition-duration: 1s;
+}
+
+.text_pass-active {
+  width: 25%;
+  margin-right: 9%;
+  font-size: 1em;
+  color: #22221d;
+  background-color: #726e5c;
+  padding: 1.5em;
+  border-radius: 2em;
+  opacity: 1;
+}
+
+.passion_img {
+  width: 20%;
+  border-radius: 50%;
+  margin-right: 5%;
+}
+
+.passion_img img {
+  width: 100%;
+  border-radius: 50%;
+  border: #4e4c42 4px solid;
+  cursor: pointer;
+  opacity: 0.6;
+  transition-duration: 0.5s;
+  margin-bottom: -0.4em;
+}
+
+.passion_img img:hover {
+  border: #ac0000 4px solid;
+  opacity: 1;
+}
+
+
+/* ========================================== deuxieme bulle ========================================== */
+
+.trait2 {
+  height: 5em;
+  width: 0.4em;
+  background-color: #4e4c42;
+  opacity: 0.6;
+  display: flex;
+  margin-left: 51%;
+}
+
+.h2_steam {
+  font-size: 2em;
+  color: #22221d;
+  transform: translate(20%, -250%);
+  opacity: 0;
+  transition-duration: 1s;
+  text-align: center;
+}
+
+.h2_steam-active {
+  text-align: center;
+  font-size: 2em;
+  color: #69665b;
+  transform: translate(100%, -250%);
+  opacity: 1;
+  transition-duration: 1s;
+}
+
+.container_passion2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.text_pass2 {
+  width: 25%;
+  margin-left: 11%;
+  font-size: 1em;
+  color: #22221d;
+  background-color: #726e5c;
+  padding: 1.5em;
+  border-radius: 2em;
+  opacity: 0;
+  transition-duration: 1s;
+}
+
+.text_pass2-active {
+  width: 25%;
+  margin-left: 11%;
+  font-size: 1em;
+  color: #22221d;
+  background-color: #726e5c;
+  padding: 1.5em;
+  border-radius: 2em;
+  opacity: 1;
+}
+
+.passion_img2 {
+  width: 20%;
+  border-radius: 50%;
+  /* margin-top: 2em; */
+  margin-left: 5%;
+}
+
+.passion_img2 img {
+  width: 100%;
+  border-radius: 50%;
+  border: #4e4c42 4px solid;
+  cursor: pointer;
+  opacity: 0.6;
+  transition-duration: 0.5s;
+  margin-bottom: -3em;
+}
+
+.passion_img2 img:hover {
+  border: #03b8ff 4px solid;
+  opacity: 1;
+}
+
+
+
+/* =========================================== 3eme Bulle ============================================= */
+
+.h2_musique {
+  font-size: 2em;
+  color: #22221d;
+  transform: translate(150%, 0);
+  opacity: 0;
+  transition-duration: 1s;
+}
+
+.h2_musique-active {
+  font-size: 2em;
+  color: #69665b;
+  transform: translate(-35%, 0);
+  opacity: 1;
+  transition-duration: 1s;
+  text-align: center;
+}
+
+.text_pass3 {
+  width: 25%;
+  margin-right: 9%;
+  font-size: 1em;
+  color: #22221d;
+  background-color: #726e5c;
+  padding: 1.5em;
+  border-radius: 2em;
+  opacity: 0;
+  transition-duration: 1s;
+}
+
+.text_pass3-active {
+  width: 25%;
+  margin-right: 9%;
+  font-size: 1em;
+  color: #22221d;
+  background-color: #726e5c;
+  padding: 1.5em;
+  border-radius: 2em;
+  opacity: 1;
+}
+
+.passion_img3 {
+  width: 20%;
+  border-radius: 50%;
+
+  margin-right: 5%;
+}
+
+.passion_img3 img {
+  width: 100%;
+  border-radius: 50%;
+  border: #4e4c42 4px solid;
+  cursor: pointer;
+  opacity: 0.6;
+  transition-duration: 0.5s;
+  margin-bottom: -0.4em;
+}
+
+.passion_img3 img:hover {
+  border: #00e439 4px solid;
+  opacity: 1;
 }
