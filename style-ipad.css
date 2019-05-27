@@ -1,0 +1,425 @@
+@media only screen and (max-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    height: 3000px;
+    background: linear-gradient(to right, #c2bca0, #706c5f);
+    color: #22221d;
+  }
+
+  header {
+    margin-bottom: 3em;
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(rgba(0, 0, 0, 0.705))
+      ),
+      url("./media/image/fond1.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.733)),
+      url("./media/image/fond1.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+
+  .menu_content {
+    transition-duration: 1s;
+  }
+
+  nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .liste {
+    visibility: hidden;
+    width: 0;
+    display: flex;
+    justify-content: flex-start;
+    list-style-type: none;
+    align-items: center;
+    background: linear-gradient(to right, #aea995, #807c6d);
+    border-radius: 2em;
+    height: 3em;
+    position: fixed;
+    z-index: auto;
+    top: 3.5%;
+    left: 5%;
+    padding-left: 2em;
+    border: solid #4e4c42 2px;
+    transition: all 1.5s ease;
+  }
+
+  .liste-active {
+    visibility: visible;
+    width: 45%;
+    display: flex;
+    justify-content: flex-start;
+    list-style-type: none;
+    align-items: center;
+    background: linear-gradient(to right, #aea995, #807c6d);
+    border-radius: 2em;
+    height: 3em;
+    position: fixed;
+    z-index: auto;
+    top: 3.5%;
+    left: 5%;
+    padding-left: 3em;
+    border: solid #4e4c42 2px;
+
+    z-index: 15;
+  }
+
+  li a {
+    text-decoration: none;
+  }
+
+  li a:hover {
+    transition: none;
+    transition-delay: 0ms !important;
+    color: #22221d !important;
+  }
+
+  ul li {
+    margin-left: 5%;
+  }
+
+  .li1 {
+    transition-duration: 0.3s;
+    color: #ffffff00;
+  }
+
+  .li1-active {
+    transition-duration: 1s;
+    transition-delay: 0.7s;
+    color: white;
+  }
+
+  .li1-active:hover {
+    transform: scale(2);
+  }
+
+  nav button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+    z-index: 5;
+    position: fixed;
+    top: 3%;
+    z-index: 16;
+    left: 1%;
+  }
+  .Emilia {
+    width: 80%;
+    transition-duration: 1s;
+  }
+
+  .Emilia-active {
+    width: 80%;
+    transition-duration: 1s;
+    z-index: 3;
+    transform: rotate(1turn);
+  }
+
+  .quote {
+    position: fixed;
+    font-family: "Press Start 2P", cursive;
+    background-color: white;
+    border-radius: 2em;
+    padding: 1% 1%;
+    font-size: 0.5em;
+    top: 9%;
+    left: 7%;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.616);
+    visibility: hidden;
+    z-index: 17;
+  }
+
+  .quote::after {
+    z-index: 18;
+
+    content: "";
+    position: fixed;
+    left: 7%;
+    top: 8%;
+    transform: rotate(-17deg);
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent rgb(255, 255, 255) transparent;
+  }
+
+  .menu_content:hover .quote {
+    visibility: visible;
+  }
+
+  /* ============================================================= gen  */
+
+  .h2_general {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 1em;
+  }
+  .trait {
+    width: 20em;
+    height: 0.2em;
+    background-color: #22221d;
+    border-radius: 1em;
+    margin: 2em auto;
+  }
+
+  .trait-dark {
+    width: 20em;
+    height: 0.2em;
+    background-color: #807c6d;
+    border-radius: 1em;
+    margin: 5em auto;
+  }
+
+  .trait2 {
+    visibility: hidden;
+    height: 5em;
+    width: 0.4em;
+    background-color: #4e4c42;
+    opacity: 0.6;
+    display: flex;
+    margin-left: 51%;
+  }
+
+  /* ======================================== PASSION ================================================= */
+
+  .container_passion {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    
+  }
+
+  .h2_anime {
+    padding-top: 1em;
+    font-size: 2em;
+    color: #22221d;
+    transform: translate(0, 0);
+    opacity: 0;
+    transition-duration: 1s;
+  }
+
+  .h2_anime-active {
+    padding-top: 1em;
+    font-size: 2em;
+    color: #4e4c42;
+    transform: translate(0, 0);
+    opacity: 1;
+    transition-duration: 1s;
+  }
+
+  .text_pass {
+    width: 100%;
+    margin-right: 0%;
+    font-size: 1em;
+    color: white;
+    background-color: #504d42;
+    padding: 1.5em;
+    border-radius: 0em;
+    opacity: 0;
+    transition-duration: 1s;
+  }
+
+  .text_pass-active {
+    width: 100%;
+    margin-right: 0%;
+    font-size: 1em;
+    color: white;
+    background-color: #504d42;
+    padding: 1.5em;
+    border-radius: 0em;
+    opacity: 1;
+    transition-duration: 1s;
+  }
+
+  .passion_img {
+      margin-top: 1.5em;
+      margin-bottom: 1.5em;
+    width: 25%;
+    border-radius: 50%;
+    margin-right: 0;
+  }
+
+  .passion_img img {
+    width: 100%;
+    border-radius: 50%;
+    border: #504d42 4px solid;
+    cursor: pointer;
+    opacity: 0.6;
+    transition-duration: 0.5s;
+    margin-bottom: -0.4em;
+  }
+
+  .passion_img img:hover {
+    border: #ac0000 4px solid;
+    opacity: 1;
+  }
+
+  /* ========================================== deuxieme bulle ========================================== */
+
+  .h2_steam {
+    font-size: 2em;
+    color: #504d42;
+    transform: translate(0%, -500%);
+    opacity: 0;
+    transition-duration: 1s;
+    text-align: center;
+  }
+
+  .h2_steam-active {
+    font-size: 2em;
+    color: #504d42;
+    transform: translate(0%, -500%);
+    opacity: 1;
+    transition-duration: 1s;
+    text-align: center;
+  }
+
+  .container_passion2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .text_pass2 {
+    width: 100%;
+    margin-left: 0%;
+    font-size: 1em;
+    color: white;
+    background-color: #504d42;
+    padding: 1.5em;
+    border-radius: 0em;
+    opacity: 0;
+    transition-duration: 1s;
+    transform: translate(0%, 240%);
+  }
+
+  .text_pass2-active {
+    width: 100%;
+    margin-left: 0%;
+    font-size: 1em;
+    color: white;
+    background-color: #504d42;
+    padding: 1.5em;
+    border-radius: 0em;
+    opacity: 1;
+    transition-duration: 1s;
+    transform: translate(0%, 240%);
+  }
+
+  .passion_img2 {
+    transform: translate(0%, -30%);
+    margin-top: 0;
+    margin-bottom: 1.5em;
+    width: 25%;
+    border-radius: 50%;
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .passion_img2 img {
+    width: 100%;
+    border-radius: 50%;
+    border: #4e4c42 4px solid;
+    cursor: pointer;
+    opacity: 0.6;
+    transition-duration: 0.5s;
+    margin-bottom: -3em;
+  }
+
+  .passion_img2 img:hover {
+    border: #03b8ff 4px solid;
+    opacity: 1;
+  }
+
+  /* =========================================== 3eme Bulle ============================================= */
+
+  .container_passion3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .h2_musique {
+    padding-top: 1em;
+    font-size: 2em;
+    color: #504d42;
+    transform: translate(0, 0);
+    opacity: 0;
+    transition-duration: 1s;
+  }
+
+  .h2_musique-active {
+    padding-top: 1em;
+    font-size: 2em;
+    color: #504d42;
+    transform: translate(0, 0);
+    opacity: 1;
+    transition-duration: 1s;
+  }
+
+  .text_pass3 {
+    width: 100%;
+    margin-right: 0%;
+    font-size: 1em;
+    color: white;
+    background-color: #504d42;
+    padding: 1.5em;
+    border-radius: 0em;
+    opacity: 0;
+    transition-duration: 1s;
+  }
+
+  .text_pass3-active {
+    width: 100%;
+    margin-right: 0%;
+    font-size: 1em;
+    color: white;
+    background-color: #504d42;
+    padding: 1.5em;
+    border-radius: 0em;
+    opacity: 1;
+    transition-duration: 1s;
+  }
+
+  .passion_img3 {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    width: 25%;
+    border-radius: 50%;
+
+    margin-right: 0%;
+  }
+
+  .passion_img3 img {
+    width: 100%;
+    border-radius: 50%;
+    border: #4e4c42 4px solid;
+    cursor: pointer;
+    opacity: 0.6;
+    transition-duration: 0.5s;
+    margin-bottom: -0.4em;
+  }
+
+  .passion_img3 img:hover {
+    border: #00e439 4px solid;
+    opacity: 1;
+  }
+}
