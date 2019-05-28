@@ -1,5 +1,3 @@
-
-
 // $(".li1").click(function() {
 //   $(".liste-active").removeClass("liste-active");
 // });
@@ -44,14 +42,11 @@ $("#switch").on("click", () => {
   } else {
     $(".mybody").removeClass("dark");
     $(".trait").removeClass("trait-dark");
-
   }
 });
 
 // ================================================= Jeux ================================
 
-
-
 $("#dk").click(function() {
-($("#empty").attr("src", "./media/image/2b.jpg"))
+  $("#empty").attr("src", "./media/image/2b.jpg");
 });

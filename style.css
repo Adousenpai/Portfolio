@@ -364,7 +364,6 @@ nav button {
   opacity: 1;
 }
 
-
 /* ========================================== deuxieme bulle ========================================== */
 
 .trait2 {
@@ -443,16 +442,13 @@ nav button {
   opacity: 1;
 }
 
-
-
 /* =========================================== 3eme Bulle ============================================= */
-
 
 .container_passion3 {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-} 
+}
 
 .h2_musique {
   font-size: 2em;
@@ -518,12 +514,123 @@ nav button {
 
 /* =================================================== Jeux ====================================*/
 
-
 #jeux {
+  width: 100%;
   height: 100vh;
+  box-sizing: border-box;
 }
 
-
 .container_jeux {
- 
+  width: 100%;
+  height: 90vh;
+  position: relative;
+}
+
+.container_ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  width: 100%;
+  background-color: #000000;
+  height: 100%;
+}
+
+.container_il {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.container_il img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  transition-duration: 1s;
+  transform: scale(1.2);
+  z-index: auto;
+  cursor: pointer;
+}
+
+#mhw-mini:hover {
+  opacity: 1;
+  transform: scale(1);
+}
+
+#dk-mini:hover {
+  opacity: 1;
+  transform: scale(1);
+}
+
+#hw-mini:hover {
+  opacity: 1;
+  transform: scale(1);
+}
+
+#nier-mini:hover {
+  opacity: 1;
+  transform: scale(1);
+}
+
+#witcher-mini:hover {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* ==================================================================================================== JS GAME  */
+
+.cover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+  opacity: 0;
+  text-align: center;
+  transition-duration: 1s;
+}
+
+.cover-active {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 5;
+  opacity: 1;
+  text-align: center;
+  transition-duration: 1.5s;
+}
+
+.close {
+  z-index: 7;
+}
+
+.cover img {
+  width: 100%;
+  height: 100%;
+}
+
+.cover-text {
+  top: 0%;
+  color: white;
+  position: absolute;
+  background-color: #000000ce;
+  width: 25%;
+  height: 100%;
+  right: 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 10em;
+  z-index: 6;
+}
+
+.cover-text h3 {
+  font-size: 3em;
+  margin-bottom: 5em;
+}
+
+.close {
+  font-size: 3em;
+  position: absolute;
+  top: 2%;
+  right: 4%;
+  cursor: pointer;
 }

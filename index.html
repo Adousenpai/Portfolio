@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style-ipad.css">
     <link rel="stylesheet" href="style-iphone.css">
     <link rel="stylesheet" href="style-1080p.css">
+    <link rel="stylesheet" href="style-720p.css">
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
@@ -84,8 +85,24 @@
       <div class="trait"></div> 
     </section>
     <section id="Jeux">
-      <h2 class="h2_general">Jeux</h2>
+      <h2 class="h2_general">Game List</h2>
       <div class="container_jeux">
+        <div class="cover">
+          <img src="./media/image/hw.jpg">
+          <div class="cover-text">
+          <span onclick="close()" class="close">&times;</span>
+          <h3 class="nom_jeux">mhw</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam vel porro accusamus maxime eius at totam quam unde aliquam? Aspernatur vitae facere ratione dolorum cumque accusantium laudantium neque placeat alias.</p>
+        </div>        
+          
+      </div>
+        <ul class="container_ul">
+          <li class="container_il"><img onclick="couverture('MonsterHunter')" id="mhw-mini"src="./media/image/mhw-mini.png"></li>
+          <li class="container_il"><img onclick="couverture('Darksoul')" id="dk-mini"src="./media/image/dk-mini.png"></li>
+          <li class="container_il"><img onclick="couverture('FinalFantasyXIV')" id="hw-mini"src="./media/image/hw-mini.png"></li>
+          <li class="container_il"><img onclick="couverture('NieRAutomata')" id="nier-mini"src="./media/image/nier-mini.png"></li>
+          <li class="container_il"><img onclick="couverture('TheWitcher')" id="witcher-mini"src="./media/image/witcher-min.png"></li>
+        </ul>
         <img id="empty" src="" alt="">
       </div>
       <div class="trait"></div>
@@ -106,7 +123,7 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="main.js"></script>
+    <script src="game.js"></script>
     <script src="menu.js"></script>
     
   </body>

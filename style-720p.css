@@ -1,0 +1,642 @@
+@media only screen and (max-width: 1280px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: "Open Sans", sans-serif;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+      }
+      
+      body {
+        height: 3000px;
+        background: linear-gradient(to right, #c2bca0, #706c5f);
+        color: #22221d;
+      }
+      
+      header {
+        margin-bottom: 3em;
+        background-image: -webkit-gradient(
+            linear,
+            left top,
+            left bottom,
+            from(rgba(0, 0, 0, 0.705))
+          ),
+          url("./media/image/fond1.jpg");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.733)),
+          url("./media/image/fond1.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+      }
+      
+      .menu_content {
+        transition-duration: 1s;
+      }
+      
+      nav {
+        width: 100%;
+        display: flex;
+        align-items: center;
+      }
+      .liste {
+        opacity: 0;
+        width: 0;
+        display: flex;
+        justify-content: flex-start;
+        list-style-type: none;
+        align-items: center;
+        background: linear-gradient(to right, #aea995, #807c6d);
+        border-radius: 2em;
+        height: 3em;
+        position: fixed;
+        z-index: auto;
+        top: 3.5%;
+        left: 5%;
+        padding-left: 2em;
+        border: solid #4e4c42 2px;
+        transition: all 1.5s ease;
+      }
+      
+      .liste-active {
+        opacity: 1;
+        width: 25%;
+        display: flex;
+        justify-content: flex-start;
+        list-style-type: none;
+        align-items: center;
+        background: linear-gradient(to right, #aea995, #807c6d);
+        border-radius: 2em;
+        height: 3em;
+        position: fixed;
+        z-index: auto;
+        top: 3.5%;
+        left: 5%;
+        padding-left: 3em;
+        border: solid #4e4c42 2px;
+      
+        z-index: 15;
+      }
+      
+      li a {
+        text-decoration: none;
+      }
+      
+      li a:hover {
+        transition: none;
+        transition-delay: 0ms !important;
+        color: #22221d !important;
+      }
+      
+      ul li {
+        margin-left: 5%;
+      }
+      
+      .li1 {
+        transition-duration: 0.3s;
+        color: #ffffff00;
+      }
+      
+      .li1-active {
+        transition-duration: 1s;
+        transition-delay: 0.7s;
+        color: white;
+      }
+      
+      .li1-active:hover {
+        transform: scale(2);
+      }
+      
+      nav button {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        width: 10%;
+        z-index: 5;
+        position: fixed;
+        top: 2%;
+        z-index: 16;
+      }
+      .Emilia {
+        width: 50%;
+        transition-duration: 1s;
+      }
+      
+      .Emilia-active {
+        width: 50%;
+        transition-duration: 1s;
+        z-index: 3;
+        transform: rotate(1turn);
+      }
+      
+      .quote {
+        position: fixed;
+        font-family: "Press Start 2P", cursive;
+        background-color: white;
+        border-radius: 2em;
+        padding: 0.5% 0.5%;
+        font-size: 0.6em;
+        top: 11%;
+        left: 6%;
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.616);
+        visibility: hidden;
+        z-index: 17;
+      }
+      
+      .quote::after {
+        z-index: 18;
+      
+        content: "";
+        position: fixed;
+        left: 6%;
+        top: 9%;
+        transform: rotate(-17deg);
+        border-width: 10px;
+        border-style: solid;
+        border-color: transparent transparent rgb(255, 255, 255) transparent;
+      }
+      
+      .menu_content:hover .quote {
+        visibility: visible;
+      }
+      
+      /* =========================================== TOGGLE ======================================================== */
+      
+      .switch-label {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 3.5em;
+        height: 2em;
+        background-color: rgb(174, 181, 184);
+        border-radius: 50px;
+        position: relative;
+        cursor: pointer;
+        transition: 0.5s all ease;
+      }
+      
+      .switch-label .toggle {
+        width: 1.5em;
+        height: 1.5em;
+        border-radius: 25px;
+        background-color: #ffffff;
+        position: absolute;
+        left: 3px;
+        transition: 0.5s all ease;
+      }
+      
+      .wrapper {
+        top: 2%;
+        right: 1%;
+        display: flex;
+        justify-content: flex-end;
+        transition: 1s all ease;
+        width: 100%;
+        position: fixed;
+        z-index: 14;
+      }
+      
+      #switch:checked ~ .switch-label {
+        background: #000000;
+        border: none;
+        transition: 0.5s all ease;
+      }
+      
+      #switch:checked ~ .switch-label .toggle {
+        height: 12.5px;
+        border-radius: 25px 25px 0 0;
+        background: transparent;
+        box-shadow: 0 -6px 0 0 rgb(255, 255, 255);
+        transform: scale(0.9) translateX(25px) rotate(90deg);
+        transition: 0.7s all ease;
+      }
+      
+      #switch {
+        visibility: hidden;
+        position: absolute;
+      }
+      
+      .dark {
+        background: #22221d;
+        transition: 1s all ease;
+        color: #aea995;
+      }
+      
+      .quote {
+        color: black !important;
+      }
+      
+      /* ====================================================================== Banniere ============================================================= */
+      
+      .header_text {
+        width: 100%;
+        position: relative;
+        top: 50%;
+        text-align: center;
+        color: white;
+        transform: translate(0, -50%);
+        z-index: 4;
+      }
+      
+      .header_text h1 {
+        font-size: 5em;
+        margin-bottom: 0.3em;
+      }
+      
+      .header_text h2 {
+        font-size: 2em;
+        margin-bottom: 1.5em;
+      }
+      
+      .header_text button {
+        border: none;
+        padding: 1.5em 1.5em;
+        border-radius: 1.2em;
+        background-color: #aea995;
+        transition-duration: 0.5s;
+      }
+      
+      .header_text button a {
+        text-decoration: none;
+        font-size: 1.5em;
+        color: #22221d;
+        transition-duration: 0.5s;
+      }
+      
+      .header_text button:hover {
+        background-color: #22221d;
+      }
+      
+      .header_text button:hover a {
+        color: #807c6d;
+      }
+      
+      /* ========================================== General ============================================== */
+      
+      .h2_general {
+        text-align: center;
+        font-size: 2.5em;
+        margin-bottom: 1em;
+      }
+      .trait {
+        width: 20em;
+        height: 0.2em;
+        background-color: #22221d;
+        border-radius: 1em;
+        margin: 3em auto;
+      }
+      
+      .trait-dark {
+        width: 20em;
+        height: 0.2em;
+        background-color: #807c6d;
+        border-radius: 1em;
+        margin: 5em auto;
+      }
+      
+      /* ======================================== PASSION ================================================= */
+      
+      .container_passion {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      }
+      
+      .h2_anime {
+        font-size: 2em;
+        color: #22221d;
+        transform: translate(150%, 0);
+        opacity: 0;
+        transition-duration: 1s;
+      }
+      
+      .h2_anime-active {
+        font-size: 2em;
+        color: #69665b;
+        transform: translate(-35%, 0);
+        opacity: 1;
+        transition-duration: 1s;
+        text-align: center;
+      }
+      
+      .text_pass {
+        width: 25%;
+        margin-right: 9%;
+        font-size: 1em;
+        color: #22221d;
+        background-color: #726e5c;
+        padding: 1.5em;
+        border-radius: 2em;
+        opacity: 0;
+        transition-duration: 1s;
+      }
+      
+      .text_pass-active {
+        width: 25%;
+        margin-right: 9%;
+        font-size: 1em;
+        color: #22221d;
+        background-color: #726e5c;
+        padding: 1.5em;
+        border-radius: 2em;
+        opacity: 1;
+      }
+      
+      .passion_img {
+        width: 20%;
+        border-radius: 50%;
+        margin-right: 5%;
+      }
+      
+      .passion_img img {
+        width: 100%;
+        border-radius: 50%;
+        border: #4e4c42 4px solid;
+        cursor: pointer;
+        opacity: 0.6;
+        transition-duration: 0.5s;
+        margin-bottom: -0.4em;
+      }
+      
+      .passion_img img:hover {
+        border: #ac0000 4px solid;
+        opacity: 1;
+      }
+      
+      /* ========================================== deuxieme bulle ========================================== */
+      
+      .trait2 {
+        height: 5em;
+        width: 0.4em;
+        background-color: #4e4c42;
+        opacity: 0.6;
+        display: flex;
+        margin-left: 51%;
+      }
+      
+      .h2_steam {
+        font-size: 2em;
+        color: #22221d;
+        transform: translate(20%, -250%);
+        opacity: 0;
+        transition-duration: 1s;
+        text-align: center;
+      }
+      
+      .h2_steam-active {
+        text-align: center;
+        font-size: 2em;
+        color: #69665b;
+        transform: translate(100%, -250%);
+        opacity: 1;
+        transition-duration: 1s;
+      }
+      
+      .container_passion2 {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+      .text_pass2 {
+        width: 25%;
+        margin-left: 11%;
+        font-size: 1em;
+        color: #22221d;
+        background-color: #726e5c;
+        padding: 1.5em;
+        border-radius: 2em;
+        opacity: 0;
+        transition-duration: 1s;
+      }
+      
+      .text_pass2-active {
+        width: 25%;
+        margin-left: 11%;
+        font-size: 1em;
+        color: #22221d;
+        background-color: #726e5c;
+        padding: 1.5em;
+        border-radius: 2em;
+        opacity: 1;
+      }
+      
+      .passion_img2 {
+        width: 20%;
+        border-radius: 50%;
+        /* margin-top: 2em; */
+        margin-left: 5%;
+      }
+      
+      .passion_img2 img {
+        width: 100%;
+        border-radius: 50%;
+        border: #4e4c42 4px solid;
+        cursor: pointer;
+        opacity: 0.6;
+        margin-bottom: -3em;
+      }
+      
+      .passion_img2 img:hover {
+        border: #03b8ff 4px solid;
+        opacity: 1;
+      }
+      
+      /* =========================================== 3eme Bulle ============================================= */
+      
+      .container_passion3 {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      }
+      
+      .h2_musique {
+        font-size: 2em;
+        color: #22221d;
+        transform: translate(150%, 0);
+        opacity: 0;
+        transition-duration: 1s;
+      }
+      
+      .h2_musique-active {
+        font-size: 2em;
+        color: #69665b;
+        transform: translate(-35%, 0);
+        opacity: 1;
+        transition-duration: 1s;
+        text-align: center;
+      }
+      
+      .text_pass3 {
+        width: 25%;
+        margin-right: 9%;
+        font-size: 1em;
+        color: #22221d;
+        background-color: #726e5c;
+        padding: 1.5em;
+        border-radius: 2em;
+        opacity: 0;
+        transition-duration: 1s;
+      }
+      
+      .text_pass3-active {
+        width: 25%;
+        margin-right: 9%;
+        font-size: 1em;
+        color: #22221d;
+        background-color: #726e5c;
+        padding: 1.5em;
+        border-radius: 2em;
+        opacity: 1;
+      }
+      
+      .passion_img3 {
+        width: 20%;
+        border-radius: 50%;
+      
+        margin-right: 5%;
+      }
+      
+      .passion_img3 img {
+        width: 100%;
+        border-radius: 50%;
+        border: #4e4c42 4px solid;
+        cursor: pointer;
+        opacity: 0.6;
+        transition-duration: 0.5s;
+        margin-bottom: -0.4em;
+      }
+      
+      .passion_img3 img:hover {
+        border: #00e439 4px solid;
+        opacity: 1;
+      }
+      
+      /* =================================================== Jeux ====================================*/
+      
+      #jeux {
+        width: 100%;
+        height: 100vh;
+        box-sizing: border-box;
+      }
+      
+      .container_jeux {
+        width: 100%;
+        height: 60vh;
+        position: relative;
+      }
+      
+      .container_ul {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        width: 100%;
+        background-color: #000000;
+        height: 100%;
+      }
+      
+      .container_il {
+        margin: 0;
+        height: 100%;
+        overflow: hidden;
+      }
+      
+      .container_il img {
+        width: 100%;
+        height: 100%;
+        opacity: 0.2;
+        transition-duration: 1s;
+        transform: scale(1.2);
+        z-index: auto;
+        cursor: pointer;
+      }
+      
+      #mhw-mini:hover {
+        opacity: 1;
+        transform: scale(1);
+      }
+      
+      #dk-mini:hover {
+        opacity: 1;
+        transform: scale(1);
+      }
+      
+      #hw-mini:hover {
+        opacity: 1;
+        transform: scale(1);
+      }
+      
+      #nier-mini:hover {
+        opacity: 1;
+        transform: scale(1);
+      }
+      
+      #witcher-mini:hover {
+        opacity: 1;
+        transform: scale(1);
+      }
+      
+      /* ==================================================================================================== JS COVER  */
+      
+      .cover {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 0;
+        opacity: 0;
+        text-align: center;
+        transition-duration: 1s;
+      }
+      
+      .cover-active {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 5;
+        opacity: 1;
+        text-align: center;
+        transition-duration: 1.5s;
+      }
+      
+      .close {
+        z-index: 7;
+      }
+      
+      .cover img {
+        width: 100%;
+        height: 100%;
+      }
+      
+      .cover-text {
+        top: 0%;
+        color: white;
+        position: absolute;
+        background-color: #000000ce;
+        width: 25%;
+        height: 100%;
+        right: 0%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-bottom: 10em;
+        z-index: 6;
+      }
+      
+      .cover-text h3 {
+        font-size: 2em;
+        margin-bottom: 4em;
+        margin-top: 4em;
+
+      }
+      
+      .close {
+        font-size: 3em;
+        position: absolute;
+        top: 2%;
+        right: 4%;
+        cursor: pointer;
+      }
+      
+}
