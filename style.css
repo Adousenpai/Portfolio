@@ -41,7 +41,7 @@ nav {
   align-items: center;
 }
 .liste {
-  visibility: hidden;
+  opacity: 0;
   width: 0;
   display: flex;
   justify-content: flex-start;
@@ -60,8 +60,8 @@ nav {
 }
 
 .liste-active {
-  visibility: visible;
-  width: 45%;
+  opacity: 1;
+  width: 25%;
   display: flex;
   justify-content: flex-start;
   list-style-type: none;
@@ -435,7 +435,6 @@ nav button {
   border: #4e4c42 4px solid;
   cursor: pointer;
   opacity: 0.6;
-  transition-duration: 0.5s;
   margin-bottom: -3em;
 }
 
@@ -447,6 +446,13 @@ nav button {
 
 
 /* =========================================== 3eme Bulle ============================================= */
+
+
+.container_passion3 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+} 
 
 .h2_musique {
   font-size: 2em;
@@ -508,4 +514,16 @@ nav button {
 .passion_img3 img:hover {
   border: #00e439 4px solid;
   opacity: 1;
+}
+
+/* =================================================== Jeux ====================================*/
+
+
+#jeux {
+  height: 100vh;
+}
+
+
+.container_jeux {
+ 
 }

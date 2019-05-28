@@ -338,12 +338,12 @@
   }
 
   .h2_anime-active {
+    padding-top: 1em;
     font-size: 2em;
-    color: #504d42;
-    transform: translate(-35%, 0);
+    color: #22221d;
+    transform: translate(0, 0);
     opacity: 1;
     transition-duration: 1s;
-    text-align: center;
   }
 
   .text_pass {
@@ -365,7 +365,7 @@
     color: white;
     background-color: #504d42;
     padding: 1.5em;
-    border-radius: 2em;
+    border-radius: 0em;
     opacity: 1;
     transition-duration: 1s;
   }
@@ -397,7 +397,7 @@
 
   .h2_steam {
     font-size: 2em;
-    color: #22221d;
+    color: #504d42;
     transform: translate(0%,-410%);
     opacity: 1;
     transition-duration: 1s;
@@ -405,12 +405,12 @@
   }
 
   .h2_steam-active {
-    text-align: center;
     font-size: 2em;
     color: #504d42;
-    transform: translate(120%, -130%);
-    opacity: 0;
+    transform: translate(0%,-410%);
+    opacity: 1;
     transition-duration: 1s;
+    text-align: center;
   }
 
   .container_passion2 {
@@ -436,13 +436,13 @@
     width: 100%;
     margin-left: 0%;
     font-size: 1em;
-    color: #22221d;
+    color: white;
     background-color: #504d42;
     padding: 1.5em;
     border-radius: 0em;
     opacity: 1;
     transition-duration: 1s;
-    transform: translate(0%,130%);
+    transform: translate(0%,120%);
   }
 
   .passion_img2 {
@@ -483,7 +483,7 @@
     .h2_musique {
         padding-top: 1em;
     font-size: 2em;
-    color: #22221d;
+    color: #504d42;
     transform: translate(0, 0);
     opacity: 1;
     transition-duration: 1s;
@@ -492,8 +492,8 @@
   .h2_musique-active {
     font-size: 2em;
     color: #504d42;
-    transform: translate(-35%, 0);
-    opacity: 0;
+    transform: translate(0, 0);
+    opacity: 1;
     transition-duration: 1s;
     text-align: center;
   }
@@ -512,13 +512,14 @@
 
   .text_pass3-active {
     width: 100%;
-    margin-right: 9%;
-    font-size: 0.9em;
+    margin-right: 0%;
+    font-size: 1em;
     color: white;
     background-color: #504d42;
     padding: 1.5em;
     border-radius: 0em;
-    opacity: 0;
+    opacity: 1;
+    transition-duration: 1s;
   }
 
   .passion_img3 {
