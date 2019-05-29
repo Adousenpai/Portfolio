@@ -522,7 +522,7 @@ nav button {
 
 .container_jeux {
   width: 100%;
-  height: 90vh;
+  height: 85vh;
   position: relative;
 }
 
@@ -605,13 +605,14 @@ nav button {
 .cover img {
   width: 100%;
   height: 100%;
+  
 }
 
 .cover-text {
   top: 0%;
   color: white;
   position: absolute;
-  background-color: #000000ce;
+  background-color: #000000ec;
   width: 25%;
   height: 100%;
   right: 0%;
