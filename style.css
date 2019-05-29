@@ -8,7 +8,6 @@
 }
 
 body {
-  height: 3000px;
   background: linear-gradient(to right, #c2bca0, #706c5f);
   color: #22221d;
 }
@@ -522,7 +521,7 @@ nav button {
 
 .container_jeux {
   width: 100%;
-  height: 85vh;
+  height: 80vh;
   position: relative;
 }
 
@@ -605,7 +604,6 @@ nav button {
 .cover img {
   width: 100%;
   height: 100%;
-  
 }
 
 .cover-text {
@@ -619,13 +617,13 @@ nav button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-bottom: 10em;
+  padding-bottom: 0em;
   z-index: 6;
 }
 
 .cover-text h3 {
-  font-size: 3em;
-  margin-bottom: 5em;
+  font-size: 2em;
+  margin-bottom: 2em;
 }
 
 .close {
@@ -634,4 +632,87 @@ nav button {
   top: 2%;
   right: 4%;
   cursor: pointer;
+}
+/* ====================================================== galerie  */
+
+#Galerie {
+ 
+  padding-bottom: 5em;
+}
+
+.container_gal {
+  width: 100%;
+  height: 80%;
+}
+
+.container_gal ul {
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+
+  background-color: #000000;
+  padding-bottom: -2%;
+}
+
+.container_gal li {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.container_gal li img {
+  width: 100%;
+  transform: scale(1.3);
+  transition-duration: 1s;
+  opacity: 0.3;
+}
+
+.container_gal li img:hover {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.1);
+}
+
+/* ================================================================ Footer */
+#Suivre {
+  width: 100%;
+  background-color: #4e4c42;
+  padding-top: 2em;
+}
+
+.container_footer {
+  width: 50%;
+  margin: auto;
+  margin-top: -2em;
+}
+
+.container_footer img {
+  width: 25%;
+  border-radius: 50%;
+  margin-left: 37%;
+  margin-right: 35%;
+}
+
+.icon {
+  margin-left: 41%;
+  margin-right: 40%;
+  font-size: 2em;
+  color: #ccc5a8;
+  transition-duration: 1s;
+  cursor: pointer;
+}
+
+#icon1:hover {
+  color: rgb(69, 85, 121);
+  transition-duration: 0.5s;
+}
+
+#icon2:hover {
+  color: rgb(46, 192, 192);
+  transition-duration: 0.5s;
+}
+
+#icon3:hover {
+  color: rgb(230, 99, 48);
+  transition-duration: 0.5s;
 }

@@ -1,6 +1,6 @@
-// $(".li1").click(function() {
-//   $(".liste-active").removeClass("liste-active");
-// });
+$(".li1").click(function() {
+  $(".liste-active").removeClass("liste-active");
+});
 
 // emil boutton
 
